@@ -1,0 +1,343 @@
+/*CSS*/
+body,
+input,
+textarea,
+select {
+    font-family: 'Changa', sans-serif;
+}
+
+/*p, h1, h2, h3, ul, li*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+iframe {
+    vertical-align: top;
+}
+
+a,
+i,
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input[type="date"],
+select,
+textarea {
+    transition: 0.3s ease-in-out;
+}
+
+a,
+i {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.headerTop {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.telefon {
+    font-size: 30px;
+}
+
+.telefon:hover {
+    color: #ff5e00;
+    text-decoration: underline;
+}
+
+.odkazy {
+    font-size: 40px;
+}
+
+.fa-facebook:hover {
+    color: #1877F2;
+
+}
+
+.fa-instagram:hover {
+    color: #E4405F;
+}
+
+.fa-square-twitter:hover {
+    color: #1DA1F2;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 8px;
+    line-height: 1;
+    display: inline-block;
+
+}
+
+.logo:hover {
+    color: #ff5e00;
+    text-decoration: none;
+}
+
+header .container {
+    width: 85%;
+    text-align: center;
+}
+
+/*.menu {
+    margin: 30px;
+}*/
+
+.menu ol {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 20px;
+}
+
+.menu ol li a {
+    padding-bottom: 10px;
+}
+
+.menu ol li a:hover {
+    border-bottom: 3px solid #ff5e00;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:700px) {
+    .menu ol {
+        flex-direction: column;
+        gap:20px
+    }
+    .menu ol li a:hover {
+        border:none;
+        color: #ff5e00;
+
+    }
+
+}
+
+
+
+/*/////////////////////SECTION//////////////////////*/
+
+.obsah {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 40px 0 40px;
+    font-weight: bold;
+}
+
+.obsah h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #ff5e00;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/*//////////////////////////FOOTER////////////////////*/
+
+.pata {
+    background: #eaeaea;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pata .logo {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.pataInfo {
+    padding: 10px;
+
+}
+
+.pataInfo span,
+.grayBox span {
+    color: darkred;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.pata p i,
+.grayBox p i {
+    /*margin-right: 10px;*/
+    width: 40px;
+}
+
+.pata .odkazy {
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*@keyframes rotateArond {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.move i {
+    color: #000000;
+    animation-name: rotateArond;
+    animation-duration: 1s;
+    animation-timing-function: linear(5, 5, 5s, 5s);
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}*/
+
+
+/*///////////////////////Kontakt////////////////////////*/
+
+
+.kontakt,
+.rezervace {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.gray {
+    background: lightgray;
+    padding: 0 40px 40px;
+}
+
+.grayFlex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.grayBox {
+    text-align: left;
+}
+
+.icon {
+    font-size: 70px;
+}
+
+
+.kontakt iframe {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.gray h2 {
+    padding: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.gray form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 80%;
+    margin: 0 auto 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+select:hover,
+textarea:hover {
+    border-color: green;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid red;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: green;
+    border-color: green;
+}
+
+
+/*//////////////////////galerie///////////////////////*/
+
+
+.galerieFlex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.galerieFlex a {
+    width: 28%;
+}
+
+.galerieFlex a img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:700px) {
+    .galerieFlex a {
+        width: 49%;
+    }
+}
+@media screen and (max-width:650px) {
+    .galerieFlex a {
+        width: 90%;
+    }
+}
